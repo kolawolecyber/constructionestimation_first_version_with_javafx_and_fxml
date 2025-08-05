@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.beamAndColumnController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f4f5" height="26.0" layoutY="423.0" stroke="#b5b3b3" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="524.0" layoutY="428.0" text="By Cybertech">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="3.0" prefHeight="31.0" prefWidth="600.0" text="BEAM AND COLUMN DESIGN">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="68.0" layoutX="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@welcomeConstruction.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="77.0" prefHeight="24.0" prefWidth="202.0" text="ENTER THE LENGTH">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="109.0" prefHeight="30.0" prefWidth="319.0" text="ENTER THE NUMBER OF STEEL ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="139.0" prefHeight="30.0" prefWidth="295.0" text="ENTER THE  LENGTH OF LINK">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="steeltype" layoutX="360.0" layoutY="212.0" prefHeight="25.0" prefWidth="167.0" promptText="Enter the Type of Steel" />
+      <Label layoutX="28.0" layoutY="168.0" text="Hint :  the number of steel means the pieces of steel to be used for either beams or columns">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="185.0" text="and the length means length of beam and also height for column" />
+      <Button layoutX="275.0" layoutY="272.0" mnemonicParsing="false" onAction="#typeOfSlabM" text="GET RESULT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="314.0" prefHeight="26.0" prefWidth="363.0" text="THE TOTAL LENGTH (12M) ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="315.0" prefHeight="25.0" prefWidth="176.0" text="THE TOTAL PIECES OF ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text1" layoutX="354.0" layoutY="80.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="text2" layoutX="354.0" layoutY="111.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="text3" layoutX="354.0" layoutY="141.0" prefHeight="25.0" prefWidth="220.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="227.0" layoutY="310.0" stroke="#dadada" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutX="-2.0" layoutY="302.0" stroke="#c9c7c7" strokeType="INSIDE" width="603.0" />
+      <TextField fx:id="steelLength" alignment="CENTER" editable="false" layoutX="36.0" layoutY="382.0" prefHeight="25.0" prefWidth="160.0" promptText="Length" />
+      <TextField fx:id="linksTotal" alignment="CENTER" editable="false" layoutX="264.0" layoutY="382.0" prefHeight="25.0" prefWidth="122.0" promptText="Links" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutY="257.0" stroke="#d7d7d7" strokeType="INSIDE" width="600.0" />
+      <Button layoutX="-2.0" layoutY="423.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="344.0" prefHeight="25.0" prefWidth="160.0" text="OF STEEL IS">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="404.0" layoutY="310.0" stroke="#dadada" strokeType="INSIDE" width="10.0" />
+      <Label layoutX="292.0" layoutY="344.0" text="LINKS">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="315.0" prefHeight="25.0" prefWidth="160.0" text="THE TOTAL LENGTH">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="343.0" text="OF LINKS">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="linksTotalLength" alignment="CENTER" layoutX="433.0" layoutY="382.0" promptText="Total Links Length" />
+   </children>
+</AnchorPane>

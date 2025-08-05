@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller3">
+   <children>
+      <Label alignment="CENTER" layoutY="6.0" prefHeight="52.0" prefWidth="600.0" text="CONCRETE ESTIMATION">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="79.0" prefHeight="25.0" prefWidth="207.0" text="ENTER THE LENGTH">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="126.0" prefHeight="25.0" prefWidth="207.0" text="ENTER THE BREADTH">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="172.0" prefHeight="25.0" prefWidth="207.0" text="ENTER THE HEIGHT">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="492.0" layoutX="108.0" layoutY="245.0" startX="-108.0" strokeWidth="5.0" />
+      <Label layoutX="26.0" layoutY="260.0" prefHeight="20.0" prefWidth="289.0" text="QUANTITY OF (50KG) CEMENT TO USE IS:  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sand" alignment="CENTER" layoutX="331.0" layoutY="288.0" prefHeight="21.0" prefWidth="250.0" text="tonnes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="288.0" prefHeight="20.0" prefWidth="289.0" text="QUANTITY OF SAND TO USE IS:  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cement" alignment="CENTER" layoutX="334.0" layoutY="260.0" prefHeight="21.0" prefWidth="250.0" text="Kg">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="318.0" prefHeight="20.0" prefWidth="289.0" text="QUANTITY OF COARSE TO USE IS:  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="349.0" prefHeight="20.0" prefWidth="289.0" text="QUANTITY OF WATER TO USE IS:  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="coarse" alignment="CENTER" layoutX="329.0" layoutY="318.0" prefHeight="21.0" prefWidth="250.0" text="tonnes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="water" alignment="CENTER" layoutX="325.0" layoutY="349.0" prefHeight="21.0" prefWidth="257.0" text="water">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="492.0" layoutX="108.0" layoutY="253.0" startX="-108.0" strokeWidth="5.0" />
+      <TextField fx:id="text1" layoutX="345.0" layoutY="82.0" prefHeight="25.0" prefWidth="207.0" promptText="INPUT LENGTH OF THE BUILDING" />
+      <TextField fx:id="text2" layoutX="345.0" layoutY="129.0" prefHeight="25.0" prefWidth="207.0" promptText="INPUT BREADTH OF THE BUILDING" />
+      <TextField fx:id="text3" layoutX="345.0" layoutY="175.0" prefHeight="25.0" prefWidth="207.0" promptText="INPUT HEIGHT OF THE BUILDING" />
+      <ImageView fitHeight="52.0" fitWidth="70.0" layoutX="54.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@welcomeConstruction.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="-5.0" layoutY="374.0" stroke="#b9b8b8" strokeType="INSIDE" width="605.0" />
+      <Label layoutX="520.0" layoutY="381.0" text="By Cybertech">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="263.0" layoutY="209.0" mnemonicParsing="false" onAction="#getResult" text="GET RESULT" />
+      <Button layoutY="373.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="54.0" text="Back" />
+   </children>
+</AnchorPane>
